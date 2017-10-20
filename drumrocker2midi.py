@@ -20,6 +20,7 @@ midiout.open_port(0)
 last_vel = 0
 last_time = 0
 
+
 def play_note(note, vel):
     note_on = [0x99, note, vel]
     note_off = [0x99, note, 0]
